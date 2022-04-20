@@ -1,0 +1,125 @@
+/*
+
+    La tipografia es al ciencia que estudia el diseño y uso de 
+    los tipos de letra.
+
+    Las fuentes son tipos especificos de letra.
+
+    Los glifos son cada uno de los dibujos que representan cada
+    simbolo de la fuente, incluidos los espacios.
+
+    Los estilos de fuente  son las modificaciones que se hacen a
+    las fuentes, como el grosor o la inclinacion.(Negrita, Cursiva)
+        - Muchas veeces las fuentes que no tienen estilos, el navegador
+            las falsea dando como resultado algo extraño; 
+
+    Familia tipografica, son las diferentes fuentes que pertenecen
+    a una misma fuente base
+     - Cuando una fuente tiene consigo Bold, o italic estas son aparte
+        del a fuente original, pero los hace una familia.
+          
+          Por ejemplo Arial, tiene como familia Arial Bold, y Arial Italic
+    
+    Cuando usamos una propiedad text-* estamos afectando a la fuente del 
+    texto
+
+    Fuentes predeterminadas, son las fuentes que se consideran seguras ya que
+    son genericas y no establecen una familia tipografica, si no un estilo
+     de fuente.
+
+        serif -> Fuentes que tienen serifas(Adornos en los caracteres)
+
+        sans-serif -> Fuente sin serifas
+        
+        monospace -> Fuentes que tienen el mismo espaciado entre todos sus
+        caracteres.
+
+        cursive -> Fuentes que pretenden emular escritura a mano, con las
+        ligaduras y trazos fluidos
+
+        fantasy -> Fuentes que suelen ser decorativos
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  background-color: lightcyan;
+}
+
+.caja {
+  margin: 2rem auto;
+
+  width: 100%;
+  height: auto;
+  max-width: 120rem;
+  min-width: 8rem;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 2.5rem;
+
+  border-radius: 5px;
+  box-shadow: 10px 10px rgb(0 0 0 / 0.5);
+  background-color: hsl(0, 0%, 65%);
+}
+
+.caja .texto {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.caja header {
+  width: max-content;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1rem;
+
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(0, 0%, 50%);
+}
+
+#fuente-serif {
+  font-family: serif;
+}
+
+#fuente-serif header {
+  background-color: hsl(60, 30%, 50%);
+}
+
+#fuente-sans-serif {
+  font-family: sans-serif;
+}
+
+#fuente-sans-serif header {
+  background-color: hsl(300, 30%, 50%);
+}
+
+#fuente-monospace {
+  font-family: monospace;
+}
+
+#fuente-monospace header {
+  background-color: hsl(240, 30%, 50%);
+}
+#fuente-cursive {
+  font-family: cursive;
+}
+
+#fuente-cursive header {
+  background-color: hsl(120, 30%, 50%);
+}
+#fuente-fantasy{
+    font-family: fantasy;
+}
+  
+#fuente-fantasy header {
+    background-color: hsl(180, 30%, 50%);
+}
